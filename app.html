@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Tłumacz</h1>
+    </div>
+    <div class="content">
+        <div class="main-menu">
+            <h2>Dodać słowo</h2>
+            <input type="text" id="polishWord" placeholder="Polskie słowo">
+            <input type="text" id="translateWord" placeholder="Tłumaczenie słowa">
+            <button onclick="addWord()">Dodać</button>
+            <button onclick="deleteWord()">Usuwać</button>
+            <h2>Sprawdź słowo</h2>
+            <div id="word" class="word-display"></div>
+            <input type="text" id="translation" placeholder="Wprowadź tłumaczenie">
+            <button onclick="checkTranslation()">Sprawdzać</button>
+            <div id="result"></div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Tłumacz © 2024</p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
